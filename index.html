@@ -1,11 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Info — CV của Nguyễn Thành Khang</title>
+  <meta name="description" content="Trang thông tin cá nhân — CV tĩnh." />
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Hi WebDev</h1>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+
+  <header class="site-header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Điều hướng chính">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html">Nguyễn Thành Khang</a>
+
+        <!-- Nav toggle cho màn hình nhỏ (responsive) -->
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Mở menu">
+          ☰
+        </button>
+
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html" aria-current="page">Info</a></li>
+          <li><a href="projects.html">Dự án</a></li>
+          <li><a href="experience.html">Kinh nghiệm</a></li>
+          <li><a href="hobbies.html">Sở thích</a></li>
+          <li><a href="strengths.html">Thế mạnh</a></li>
+          <li><a href="books.html">Sách</a></li>
+          <li><a href="certificates.html">Chứng chỉ</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main" class="container" role="main">
+    <!-- HERO / INFO -->
+    <section class="hero card" aria-labelledby="hero-title">
+      <img
+        src="assets/images/avatar.jpg"
+        alt="Ảnh đại diện của Nguyễn Thành Khang" 
+        class="avatar"
+        width="160" height="160"
+        loading="lazy"
+      >
+      <div>
+        <h1 id="hero-title">Nguyễn Thành Khang</h1>
+        <!-- REQ: INFO cá nhân - thông tin cơ bản, liên hệ -->
+        <p class="lead">Frontend Developer | HTML5 • CSS3 • JavaScript</p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:=23520698@gm.uit.edu.vn">23520698@gm.uit.edu.vn</a><br>
+          <strong>Phone:</strong>
+          <a href="tel:+84000000000">+84 923 250 822 </a><br>
+          <strong>Địa chỉ:</strong> Hồ Chí Minh, Việt Nam<br>
+          <strong>Địa chỉ:</strong> <a href="https://github.com/N-T-Khang" rel="me">Github</a><br>
+          <strong>Ngày sinh:</strong> 20/03/2005
+        </p>
+
+        
+      </div>
+    </section>
+
+    <!-- SHORT SUMMARY -->
+    <section class="card" aria-labelledby="summary-title">
+      <h2 id="summary-title">Tóm tắt</h2>
+      <!-- REQ: heading theo thứ bậc -->
+      <p>
+        Tôi đam mê phát triển giao diện web, tập trung vào trải nghiệm người dùng và hiệu năng.
+      </p>
+    </section>
+
+    <!-- QUICK FACTS / SKILLS (mini) -->
+    <section class="card" aria-labelledby="quick-title">
+      <h2 id="quick-title">Tổng quan kỹ năng</h2>
+      <!-- REQ: Thể hiện kỹ năng (thang điểm ở trang strengths) -->
+      <ul class="quick-list">
+        <li><strong>HTML/CSS:</strong> Responsive, a11y</li>
+        <li><strong>JavaScript:</strong> DOM, ES6+, fetch</li>
+        <li><strong>Tooling:</strong> Git, NPM, build tools</li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="card" aria-labelledby="edu-title">
+      <h2 id="edu-title">Học vấn</h2>
+      <p><strong>Trường Đại học Công nghệ Thông tin</strong> — Hệ thống thông tin (09/2023 – 06/2027)</p>
+    </section>
+
+ <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> <span class="name">Nguyễn Thành</span> — Nội dung giả lập / bản quyền tác giả.</p>
+      <p><small>Ảnh mẫu/cover: Unsplash / nguồn công cộng.</small></p>
+    </div>
+  </footer>
+
+  <!-- JS chung (navbar toggle, highlight, footer year, lightbox ở main.js) -->
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
